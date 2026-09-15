@@ -55,30 +55,26 @@ function getProblemStatement() {
 }
 
 function getCode() {
-  const scriptContent = `
-  var editor = ace.edit("ace-editor");
-  var editorContent = editor.getValue();
-  var para = document.createElement("pre");
-  para.innerText+=editorContent;
-  para.setAttribute("id","codeDataCodeToGit")
-  document.body.appendChild(para);
-  `;
+  try {
+    const monacoLines = document.querySelectorAll('.view-lines .view-line');
+    if (monacoLines && monacoLines.length > 0) {
+      return Array.from(monacoLines)
+        .map((line) => line.textContent)
+        .join('\n');
+    }
 
-  var script = document.createElement('script');
-  script.id = 'tmpScript';
-  script.appendChild(document.createTextNode(scriptContent));
-  (document.body || document.head || document.documentElement).appendChild(script);
-  const text = document.getElementById('codeDataCodeToGit').innerText;
+    const aceLines = document.querySelectorAll('.ace_line');
+    if (aceLines && aceLines.length > 0) {
+      return Array.from(aceLines)
+        .map((line) => line.textContent)
+        .join('\n');
+    }
 
-  const nodeDeletionScript = `
-  document.body.removeChild(para)
-  `;
-  var script = document.createElement('script');
-  script.id = 'tmpScript';
-  script.appendChild(document.createTextNode(nodeDeletionScript));
-  (document.body || document.head || document.documentElement).appendChild(script);
-
-  return text || '';
+    return '';
+  } catch (e) {
+    console.error('[Code-to-Git] Error extracting code:', e);
+    return '';
+  }
 }
 
 const gfgLoader = setInterval(() => {
