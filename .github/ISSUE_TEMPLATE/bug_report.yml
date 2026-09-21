@@ -75,7 +75,7 @@ body:
     attributes:
       label: Code2Git version
       description: Open the extension popup to find your version number.
-      placeholder: ex. 1.4.0
+      placeholder: ex. 0.1.1
     validations:
       required: false
 
