@@ -4,7 +4,7 @@
   <h3>Solve on LeetCode, LeetCode CN &amp; GeeksforGeeks — it lands on GitHub automatically.</h3>
 
   <p>
-    <a href="https://github.com/im-anishraj/Code2Git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+    <a href="https://github.com/im-anishraj/Code2Git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="license"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/v/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-version"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/d/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-users"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/rating/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-rating"></a>
@@ -167,7 +167,7 @@ Contributions, issues, and feature requests are welcome — this project grows w
 
 ## License
 
-Code2Git is [MIT licensed](https://github.com/im-anishraj/Code2Git/blob/main/LICENSE).
+Code2Git is [licensed under the Apache License 2.0](https://github.com/im-anishraj/Code2Git/blob/main/LICENSE).
 
 ## Support
 
