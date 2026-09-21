@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Code2Git",
   "description": "Automatically integrate your Leetcode & GFG submissions to GitHub",
-  "homepage_url": "https://github.com/im-anishraj/code-to-git",
+  "homepage_url": "https://github.com/im-anishraj/Code2Git",
   "version": "0.1.1",
   "author": "Anish Raj",
   "action": {

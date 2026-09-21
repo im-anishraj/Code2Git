@@ -72,7 +72,7 @@ const createRepo = (token, name) => {
     private: true,
     auto_init: true,
     description:
-      'Collection of LeetCode questions to ace the coding interview! - Created using [Code2Git](https://github.com/im-anishraj/code-to-git)',
+      'Collection of LeetCode questions to ace the coding interview! - Created using [Code2Git](https://github.com/im-anishraj/Code2Git)',
   };
   data = JSON.stringify(data);
 

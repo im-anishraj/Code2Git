@@ -4,13 +4,13 @@
   <h3>Solve on LeetCode, LeetCode CN &amp; GeeksforGeeks — it lands on GitHub automatically.</h3>
 
   <p>
-    <a href="https://github.com/im-anishraj/code-to-git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+    <a href="https://github.com/im-anishraj/Code2Git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/v/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-version"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/d/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-users"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/rating/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-rating"></a>
-    <a href="https://github.com/im-anishraj/code-to-git/graphs/contributors"><img src="https://img.shields.io/github/contributors/im-anishraj/code-to-git" alt="contributors"></a>
-    <a href="https://github.com/im-anishraj/code-to-git/commits/main"><img src="https://img.shields.io/github/last-commit/im-anishraj/code-to-git" alt="last-commit"></a>
-    <a href="https://github.com/im-anishraj/code-to-git/stargazers"><img src="https://img.shields.io/github/stars/im-anishraj/code-to-git?style=social" alt="stars"></a>
+    <a href="https://github.com/im-anishraj/Code2Git/graphs/contributors"><img src="https://img.shields.io/github/contributors/im-anishraj/Code2Git" alt="contributors"></a>
+    <a href="https://github.com/im-anishraj/Code2Git/commits/main"><img src="https://img.shields.io/github/last-commit/im-anishraj/Code2Git" alt="last-commit"></a>
+    <a href="https://github.com/im-anishraj/Code2Git/stargazers"><img src="https://img.shields.io/github/stars/im-anishraj/Code2Git?style=social" alt="stars"></a>
   </p>
 
   <p>
@@ -111,9 +111,9 @@ Installs and updates itself automatically — this is the preferred way to get C
 
 1. Create your own OAuth app in GitHub → [github.com/settings/applications/new](https://github.com/settings/applications/new), and keep `CLIENT_ID` / `CLIENT_SECRET` confidential.
    - **Application name:** _(your choice)_
-   - **Homepage URL:** `https://github.com/im-anishraj/code-to-git`
+   - **Homepage URL:** `https://github.com/im-anishraj/Code2Git`
    - **Authorization callback URL:** `https://github.com/`
-2. Download the project as a [release ZIP](https://github.com/im-anishraj/code-to-git/releases) or clone this repo.
+2. Download the project as a [release ZIP](https://github.com/im-anishraj/Code2Git/releases) or clone this repo.
 3. Run `npm run setup` to install the developer dependencies.
 4. Add your `CLIENT_ID` and `CLIENT_SECRET` to `src/js/authorize.js` and `src/js/oauth2.js`.
 5. Go to [chrome://extensions](chrome://extensions) and enable [Developer mode](https://www.mstoic.com/enable-developer-mode-in-chrome/) (top right).
@@ -132,7 +132,7 @@ Installs and updates itself automatically — this is the preferred way to get C
 - [x] LeetCode.cn
 - [x] GeeksforGeeks
 - [ ] HackerRank _(in progress)_
-- [ ] More platforms — [request one](https://github.com/im-anishraj/code-to-git/labels/feature)
+- [ ] More platforms — [request one](https://github.com/im-anishraj/Code2Git/labels/feature)
 
 ## Troubleshooting
 
@@ -167,12 +167,12 @@ Contributions, issues, and feature requests are welcome — this project grows w
 
 ## License
 
-Code2Git is [MIT licensed](https://github.com/im-anishraj/code-to-git/blob/main/LICENSE).
+Code2Git is [MIT licensed](https://github.com/im-anishraj/Code2Git/blob/main/LICENSE).
 
 ## Support
 
 If Code2Git saves you time, consider starring the repo — it helps others find it and keeps development going.
 
-<a href="https://github.com/im-anishraj/code-to-git/stargazers">
-  <img src="https://api.star-history.com/svg?repos=im-anishraj/code-to-git&type=Date" alt="Star History Chart" width="600">
+<a href="https://github.com/im-anishraj/Code2Git/stargazers">
+  <img src="https://api.star-history.com/svg?repos=im-anishraj/Code2Git&type=Date" alt="Star History Chart" width="600">
 </a>
