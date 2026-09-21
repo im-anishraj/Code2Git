@@ -5,9 +5,9 @@
 
   <p>
     <a href="https://github.com/im-anishraj/code-to-git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
-    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda"><img src="https://img.shields.io/chrome-web-store/v/kdkgpjpenaeoodajljkflmlnkoihkmda.svg" alt="chrome-webstore-version"></a>
-    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda"><img src="https://img.shields.io/chrome-web-store/d/kdkgpjpenaeoodajljkflmlnkoihkmda.svg" alt="chrome-webstore-users"></a>
-    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda"><img src="https://img.shields.io/chrome-web-store/rating/kdkgpjpenaeoodajljkflmlnkoihkmda.svg" alt="chrome-webstore-rating"></a>
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/v/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-version"></a>
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/d/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-users"></a>
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/rating/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-rating"></a>
     <a href="https://github.com/im-anishraj/code-to-git/graphs/contributors"><img src="https://img.shields.io/github/contributors/im-anishraj/code-to-git" alt="contributors"></a>
     <a href="https://github.com/im-anishraj/code-to-git/commits/main"><img src="https://img.shields.io/github/last-commit/im-anishraj/code-to-git" alt="last-commit"></a>
     <a href="https://github.com/im-anishraj/code-to-git/stargazers"><img src="https://img.shields.io/github/stars/im-anishraj/code-to-git?style=social" alt="stars"></a>
@@ -100,7 +100,7 @@ In the meantime, use the **manual sync** button next to the notes icon:
 ### 1. Chrome Web Store _(recommended)_
 
 <div align="center">
-    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda" rel="Download Code2Git">
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd" rel="Download Code2Git">
         <img src="https://embedsignage.com/wp-content/uploads/2016/04/embed-signage-chromeos-web-store-button.png" alt="Download Code2Git" width="300" />
     </a>
 </div>
