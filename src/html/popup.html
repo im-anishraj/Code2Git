@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/popup.css" />
+    <script src="../js/static/jquery-3.3.1.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      rel="stylesheet"
+    />
+    <script src="../js/static/semantic-2.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="ui grid container">
+      <div class="sixteen wide center aligned column">
+        <h1 id="title">Code2Git</h1>
+        <p id="caption">Sync your code from LeetCode & GFG to GitHub</p>
+        <br />
+        <!-- Authentication mode -->
+        <div id="auth_mode" hidden>
+          <p class="onboarding">
+            <br />
+            Authenticate with GitHub to use
+            <strong>Code2Git</strong>
+          </p>
+          <button id="authenticate" class="ui secondary button">
+            <i class="icon github"></i>
+            Authenticate
+          </button>
+        </div>
+
+        <!-- Repo Hook mode -->
+        <div id="hook_mode" hidden>
+          <p class="onboarding">
+            <br />
+            Set up repository hook to use
+            <strong>Code2Git</strong>
+          </p>
+          <a id="hook_URL" href="" target="blank" class="ui secondary button">
+            <i class="icon github"></i>
+            Set up Hook
+          </a>
+        </div>
+
+        <!-- Commit mode -->
+        <div id="commit_mode" hidden>
+          <!-- LeetCode Card -->
+          <div class="platform-card" style="flex-direction: column; align-items: stretch; padding: 12px 16px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #30363d; padding-bottom: 8px;">
+              <div class="platform-logo leetcode-bg" style="width: 32px; height: 32px; margin-right: 12px;">
+                <img src="../../assets/leetcode.png" alt="LeetCode" style="max-width: 18px; max-height: 18px;">
+              </div>
+              <p class="repo-link" id="repo_url" style="margin: 0; border: none; padding: 0;">LeetCode: Not Linked</p>
+            </div>
+            <div class="platform-details" style="text-align: center;">
+              <p class="problems-solved">Problems Solved: <span id="p_solved" class="highlight-yellow">0</span></p>
+              <div class="difficulty-pills" style="justify-content: center;">
+                <span class="pill pill-easy">Easy: <span id="p_solved_easy">0</span></span>
+                <span class="pill pill-medium">Medium: <span id="p_solved_medium">0</span></span>
+                <span class="pill pill-hard">Hard: <span id="p_solved_hard">0</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- GeeksForGeeks Card -->
+          <div class="platform-card" style="flex-direction: column; align-items: stretch; padding: 12px 16px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #30363d; padding-bottom: 8px;">
+              <div class="platform-logo gfg-bg" style="width: 32px; height: 32px; margin-right: 12px;">
+                <img src="../../assets/gfg.svg" alt="GFG" style="width: 20px;">
+              </div>
+              <p class="repo-link" id="gfg_repo_url" style="margin: 0; border: none; padding: 0;">GeeksForGeeks: Not Linked</p>
+            </div>
+            <div class="platform-details" style="text-align: center;">
+              <p class="problems-solved">Problems Solved: <span id="gfg_p_solved" class="highlight-yellow">0</span></p>
+              <div class="difficulty-pills" style="justify-content: center;">
+                <span class="pill pill-easy">Easy: <span id="gfg_p_solved_easy">0</span></span>
+                <span class="pill pill-medium">Medium: <span id="gfg_p_solved_medium">0</span></span>
+                <span class="pill pill-hard">Hard: <span id="gfg_p_solved_hard">0</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="action-buttons">
+            <a id="setup_more_hook_URL" href="" target="_blank" class="action-btn manage-hooks-btn">
+              <i class="icon github"></i> Manage Hooks
+            </a>
+            <button class="action-btn customize-btn" id="customize-settings-btn">
+              <span id="customize-arrow">&#9654;</span>&nbsp;Customize
+            </button>
+          </div>
+
+          <!-- Collapsible Settings List -->
+          <div class="settings-list" id="settings-list-container" style="display: none;">
+            <!-- Custom Commit Message -->
+            <div class="setting-row">
+              <div class="setting-header">
+                <span id="collapsible-commit-message-icon" class="collapsible-icon">&#9654;</span> Customize Commit Message
+              </div>
+              <div id="collapsible-commit-message-container" class="collapsible-container" style="display: none;">
+                <label for="variables">Available Variables</label>
+                <div id="variales">
+                  <button class="commit-variable" id="time">Time (Time Percentile)</button>
+                  <button class="commit-variable" id="space">Space (Space Percentile)</button>
+                  <button class="commit-variable" id="date">Today's Date</button>
+                  <button class="commit-variable" id="problemName">Problem Name</button>
+                  <button class="commit-variable" id="difficulty">Difficulty</button>
+                  <button class="commit-variable" id="language">Solved Language</button>
+                  <button class="commit-variable" id="problemTopic">Problem Topic</button>
+                </div>
+                <textarea rows="4" id="custom-commit-msg" placeholder="Time: {time}, Space: {space} - Code2Git"></textarea>
+                <div id="setting-btns">
+                  <button class="setting-btns" id="msg-reset-btn">Reset</button>
+                  <button class="setting-btns" id="msg-save-btn">Save</button>
+                  <br /><span id="success-message">Commit message saved!</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Difficulty Folder -->
+            <div class="setting-row">
+              <div class="setting-header">
+                <span id="collapsible-difficulty-icon" class="collapsible-icon">&#9654;</span> Use Difficulty Subfolder
+              </div>
+              <div id="collapsible-difficulty-container" class="collapsible-container" style="display: none;">
+                <p>Organize files into folders like <code>LeetCode/Easy/0001-two-sum/0001-two-sum.js</code></p>
+                <div class="centered-toggle">
+                  <div class="ui toggle checkbox">
+                    <input type="checkbox" id="use-difficulty-folder" />
+                    <label for="use-difficulty-folder"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Language Folder -->
+            <div class="setting-row">
+              <div class="setting-header">
+                <span id="collapsible-language-icon" class="collapsible-icon">&#9654;</span> Use Language Subfolder
+              </div>
+              <div id="collapsible-language-container" class="collapsible-container" style="display: none;">
+                <p>Organize files into folders like <code>LeetCode/JavaScript/Easy/0001-two-sum/0001-two-sum.js</code></p>
+                <div class="centered-toggle">
+                  <div class="ui toggle checkbox">
+                    <input type="checkbox" id="use-language-folder" />
+                    <label for="use-language-folder"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timestamped -->
+            <div class="setting-row">
+              <div class="setting-header">
+                <span id="collapsible-timestamp-icon" class="collapsible-icon">&#9654;</span> Enable Timestamped Filenames
+              </div>
+              <div id="collapsible-timestamp-container" class="collapsible-container" style="display: none;">
+                <p>Save submissions like <code>0001-two-sum_03-30-2025_12-30-15.js</code> to preserve versions.</p>
+                <div class="centered-toggle">
+                  <input type="checkbox" id="use-timestamp-filename" />
+                  <label for="use-timestamp-filename">Add versioned filenames</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Auto-commit solution -->
+            <div class="setting-row">
+              <div class="setting-header">
+                <span id="collapsible-solution-post-icon" class="collapsible-icon">&#9654;</span> Auto-Commit Solution Posts
+              </div>
+              <div id="collapsible-solution-post-container" class="collapsible-container" style="display: none;">
+                <p>Automatically commit your solution posts to GitHub as <code>Solution.md</code> files when you publish them on LeetCode.</p>
+                <div class="centered-toggle">
+                  <div class="ui toggle checkbox">
+                    <input type="checkbox" id="auto-commit-solution-post" checked />
+                    <label for="auto-commit-solution-post"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end settings list -->
+
+          <div class="feature-request">
+            Want more features? <a target="_blank" href="https://github.com/im-anishraj/code-to-git/labels/feature">Request a feature!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Generate Socials -->
+      <div id="socials" class="sixteen wide column">
+        <a href="https://github.com/im-anishraj/code-to-git" target="_blank">
+          <i class="ui black github icon"></i>
+        </a>
+        <a href="mailto:anishrajyadav97@gmail.com" target="_blank">
+          <i class="ui red envelope icon"></i>
+        </a>
+        <a id="welcome_URL" href="" target="_blank"><i class="ui grey globe icon"></i></a>
+      </div>
+    </div>
+
+    <script src="../js/oauth2.js"></script>
+    <script type="text/javascript" src="../js/popup.js"></script>
+  </body>
+</html>

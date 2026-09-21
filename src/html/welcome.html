@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/welcome.css" />
+    <script src="../js/static/jquery-3.3.1.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      rel="stylesheet"
+    />
+    <script src="../js/static/semantic-2.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="ui grid container">
+      <div class="sixteen wide center aligned column" style="margin-top: 5vh; margin-bottom: 3vh;">
+        <img src="../../assets/logo.png" alt="Code2Git Logo" style="width: 150px; height: 150px; margin-bottom: 10px; border-radius: 25%; box-shadow: 0 10px 30px rgba(250, 204, 21, 0.15);" />
+        <p id="title" class="caption" style="font-size: 7em; letter-spacing: 2px; margin-top: 0;">
+          Code<span style="color: #FACC15; text-shadow: 0 0 15px rgba(250, 204, 21, 0.4);">2</span>Git
+        </p>
+        <p class="caption" style="font-size: 1.8em; color: #a0a0a0 !important; margin-top: -10px;">Automatically sync your code from LeetCode & GFG to GitHub</p>
+        <br /><br /><br />
+        <p hidden id="error"></p>
+        <p hidden id="success"></p>
+        <p hidden id="unlink">Linked the wrong repo? <a>Unlink</a>.</p>
+      </div>
+
+      <!-- Create Hook -->
+      <div style="display: none; max-width: 650px; margin: 3rem auto; padding: 2.5rem; background: #0f0f0f; border: 1px solid #333; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); flex-direction: column; align-items: stretch;" id="hook_mode">
+        <h2 style="color: white; font-family: 'Norwester', 'Helvetica Neue', sans-serif; font-size: 2em; margin-bottom: 2rem; text-align: center; font-weight: normal; letter-spacing: 1px;">To get started with Code<span style="color: #FACC15;">2</span>Git</h2>
+        
+        <div class="ui form">
+          <div class="two fields">
+            <div class="field">
+              <label style="color: #a0a0a0 !important; text-align: left; font-size: 0.9em; margin-bottom: 0.5em;">Platform</label>
+              <select id="platform" style="background: #1a1a1a !important; color: white !important; border: 1px solid #444 !important; border-radius: 8px;">
+                <option value="leetcode">LeetCode</option>
+                <option value="gfg">GeeksForGeeks</option>
+              </select>
+            </div>
+            <div class="field">
+              <label style="color: #a0a0a0 !important; text-align: left; font-size: 0.9em; margin-bottom: 0.5em;">Setup Type</label>
+              <select id="type" style="background: #1a1a1a !important; color: white !important; border: 1px solid #444 !important; border-radius: 8px;">
+                <option value="">Pick an Option</option>
+                <option value="new">Create a new Private Repository</option>
+                <option value="link">Link an Existing Repository</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field" style="margin-top: 1rem;">
+            <input
+              autocomplete="off"
+              id="name"
+              placeholder="Repository Name"
+              type="text"
+              style="display: none; background: #1a1a1a !important; color: white !important; border: 1px solid #444 !important; border-radius: 8px;"
+            />
+            <select id="existing_repo" style="display: none; background: #1a1a1a !important; color: white !important; border: 1px solid #444 !important; border-radius: 8px;">
+              <option value="">Select a Repository</option>
+              <!-- Repositories will be populated here -->
+            </select>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <button id="hook_button" disabled class="ui button" style="background: linear-gradient(135deg, #FACC15, #F59E0B) !important; color: #000 !important; font-weight: bold; font-size: 1.1em; padding: 12px 30px; border-radius: 30px; border: none; cursor: pointer; transition: opacity 0.3s;">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show stats -->
+      <div style="display: none" id="commit_mode" class="ui grid container">
+        <div class="eight wide center aligned column">
+          <br /><br />
+          <div style="font-size: 2.3em" class="ui inverted large header">
+            Problems Solved: <span id="p_solved">0</span>
+          </div>
+          <div styl="font-size: 2.3em" class="ui inverted large header">
+            <span style="color: #5cb85c">Easy:</span>
+            <span id="p_solved_easy" style="color: #5cb85c">0 </span>
+            <span style="color: #f0ad4e">&ensp; &ensp; Medium:</span>
+            <span id="p_solved_medium" style="color: #f0ad4e">0 </span>
+            <span style="color: #d9534f">&ensp; &ensp; Hard:</span>
+            <span id="p_solved_hard" style="color: #d9534f">0 </span>
+          </div>
+          <div style="font-size: 1em" class="ui inverted">
+            <span style="color: #bfc0b9;" id="sync_counts"> <a>Sync Problem Counts</a></span>
+          </div>
+        </div>
+        <div class="eight wide center aligned column">
+          <br /><br /><br />
+          <div class="ui inverted large header">
+            Want more features? <br /><a
+              style="color: aqua !important; font-size: 0.8em"
+              target="_blank"
+              href="https://github.com/im-anishraj/code-to-git/labels/feature"
+              >Request a feature!</a
+            >
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="../js/welcome.js"></script>
+  </body>
+</html>

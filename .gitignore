@@ -1,6 +1,7 @@
 .env
-scripts/authorize.js
-scripts/oauth2.js
+build/*
 node_modules
 .vscode
-dist/
+**/.DS_Store
+release/*
+*.zip

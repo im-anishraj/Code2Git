@@ -1,177 +1,178 @@
 <div align="center">
+  <img src="assets/readme.png" alt="Code2Git" width="640">
 
-<img src="assets/icon.png" alt="Code to Git Logo" width="120" height="120" style="border-radius: 24px;" />
+  <h3>Solve on LeetCode, LeetCode CN &amp; GeeksforGeeks — it lands on GitHub automatically.</h3>
 
-# Code to Git
+  <p>
+    <a href="https://github.com/im-anishraj/code-to-git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda"><img src="https://img.shields.io/chrome-web-store/v/kdkgpjpenaeoodajljkflmlnkoihkmda.svg" alt="chrome-webstore-version"></a>
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda"><img src="https://img.shields.io/chrome-web-store/d/kdkgpjpenaeoodajljkflmlnkoihkmda.svg" alt="chrome-webstore-users"></a>
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda"><img src="https://img.shields.io/chrome-web-store/rating/kdkgpjpenaeoodajljkflmlnkoihkmda.svg" alt="chrome-webstore-rating"></a>
+    <a href="https://github.com/im-anishraj/code-to-git/graphs/contributors"><img src="https://img.shields.io/github/contributors/im-anishraj/code-to-git" alt="contributors"></a>
+    <a href="https://github.com/im-anishraj/code-to-git/commits/main"><img src="https://img.shields.io/github/last-commit/im-anishraj/code-to-git" alt="last-commit"></a>
+    <a href="https://github.com/im-anishraj/code-to-git/stargazers"><img src="https://img.shields.io/github/stars/im-anishraj/code-to-git?style=social" alt="stars"></a>
+  </p>
 
-### Automatically sync your coding solutions from universal platforms (LeetCode, GeeksforGeeks, etc.) to GitHub — zero effort.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://github.com/im-anishraj/code-to-git/blob/main/LICENSE)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chrome.google.com/webstore/detail/code-to-git/geodebjjkeochpcpjdkclmjbpkjblhnd)
-[![GitHub Stars](https://img.shields.io/github/stars/im-anishraj/code-to-git?style=for-the-badge&logo=github&color=yellow)](https://github.com/im-anishraj/code-to-git/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/im-anishraj/code-to-git/pulls)
-
-<br />
-
+  <p>
+    <a href="#installation">Install</a> •
+    <a href="#features">Features</a> •
+    <a href="#supported-platforms">Platforms</a> •
+    <a href="#roadmap">Roadmap</a> •
+    <a href="#contributing">Contributing</a>
+  </p>
 </div>
 
----
+<br>
 
-## ⚡ What is Code to Git?
+## Table of Contents
 
-**Code to Git** is a browser extension that **automatically pushes your accepted solutions from various coding platforms** to a GitHub repository the moment you pass all tests. No copy-pasting, no manual commits — just solve and go.
+- [What is Code2Git?](#what-is-code2git)
+- [Why Code2Git?](#why-code2git)
+- [Features](#features)
+- [Demo](#demo)
+- [Supported Platforms](#supported-platforms)
+- [Supported UI](#supported-ui)
+- [How It Works](#how-it-works)
+- [Installation](#installation)
+- [Setup](#setup)
+- [Roadmap](#roadmap)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-> 💡 Build your GitHub portfolio while you grind on coding platforms. Recruiters love green squares.
+## What is Code2Git?
 
----
+Code2Git is a Chrome extension that automatically pushes your code to GitHub the moment you pass all tests on **LeetCode**, **LeetCode CN**, or **GeeksforGeeks**.
 
-## ✨ Features
+## Why Code2Git?
 
-| Feature | Description |
-|---------|-------------|
-| 🚀 **Auto-Sync** | Solutions are pushed to GitHub instantly when accepted on supported coding platforms |
-| 📊 **Stats Dashboard** | Track your Easy, Medium, and Hard progress in a sleek popup |
-| 🔒 **Secure OAuth** | Industry-standard OAuth2 authentication with GitHub |
-| 📂 **Organized Repos** | Code is neatly organized into folders by problem name |
-| 🌙 **Premium Dark UI** | Beautiful glassmorphism design inspired by Apple aesthetics |
-| 🔗 **Flexible Setup** | Create a new repo or link an existing one — your choice |
+Your solved problems end up scattered across platforms, with no single place to show your work. Copying each accepted solution to GitHub by hand is slow and easy to forget. Code2Git removes that step entirely — solve the problem, and it's already on GitHub.
 
----
+## Features
 
-## 🎯 Why Code to Git?
+- ⚡ **Zero-effort sync** — pass the tests, and your solution is pushed to GitHub automatically. No copy-pasting, no manual commits.
+- 🌐 **Multi-platform** — one extension across LeetCode (English), LeetCode CN, and GeeksforGeeks.
+- 🔒 **Private by default** — your solutions go to a private repo unless you choose otherwise.
+- 🔁 **Manual sync** — resync your latest submission, or push older ones, with one click.
+- 📊 **Progress at a glance** — open the extension popup any time to see what you've solved.
+- 🧩 **Layout-aware** — works with both the classic and the new dynamic LeetCode UI.
 
-<table>
-<tr>
-<td width="50%">
+## Demo
 
-### 📈 Build Your Portfolio
-Recruiters **want** to see your GitHub activity. Every problem you solve becomes a real commit on your profile — automatically. Your GitHub becomes a living resume of your problem-solving skills.
+<h1 align="center">
+    <img src="assets/extension/4.png" alt="Code2Git popup on a LeetCode submission" width="800">
+</h1>
 
-</td>
-<td width="50%">
+## Supported Platforms
 
-### ⏱️ Save Time
-Manually pushing code from multiple platforms is painful and time-consuming. Code to Git eliminates that friction entirely. **Solve → Accept → Done.** Your code is already on GitHub.
+| Platform                                        | Status         | Notes                             |
+| ----------------------------------------------- | -------------- | --------------------------------- |
+| [LeetCode.com](https://leetcode.com/)           | ✅ Supported   | English UI, old & dynamic layouts |
+| [LeetCode.cn](https://leetcode.cn/) (力扣)      | ✅ Supported   | Chinese UI                        |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/) | ✅ Supported   |                                   |
+| HackerRank                                      | 🚧 In progress | See [Roadmap](#roadmap)           |
 
-</td>
-</tr>
-</table>
+## Supported UI
 
----
+Code2Git works with GeeksforGeeks and two different LeetCode UIs:
 
-## 🚀 Getting Started
+1. The **old layout**, or
+2. The new **"dynamic layout"**
 
-Getting up and running takes **under 60 seconds**:
+> [!WARNING]
+> There are known issues when using the plugin with LeetCode's non-dynamic new layout. Stick to one of the two layouts above for a reliable sync.
 
-```
-1️⃣  Install the extension from Chrome Web Store
-2️⃣  Click the extension icon → "Authorize with GitHub"
-3️⃣  Create a new repo or link an existing one
-4️⃣  Start solving on your favorite coding platforms — solutions sync automatically!
-```
+## How It Works
+
+Code2Git watches for a successful submission and pushes it to your configured GitHub repo in the background.
+
+> [!NOTE]
+> If you edit the code too quickly after submitting, the push can fail to catch your final version. Wait about 4 seconds (until the spinner stops) after submitting — and before switching languages, editors, or typing again — while the layout stays as-is. This is a known limitation; PRs to fix it are very welcome.
+
+In the meantime, use the **manual sync** button next to the notes icon:
+
+- After a successful submission, if auto-sync didn't catch it.
+- On an older submission — select it first, then hit manual sync.
+
+## Installation
+
+### 1. Chrome Web Store _(recommended)_
 
 <div align="center">
-<img src="assets/readme_profile.png" alt="Demo" width="600" />
+    <a href="https://chromewebstore.google.com/u/1/detail/code2git/kdkgpjpenaeoodajljkflmlnkoihkmda" rel="Download Code2Git">
+        <img src="https://embedsignage.com/wp-content/uploads/2016/04/embed-signage-chromeos-web-store-button.png" alt="Download Code2Git" width="300" />
+    </a>
 </div>
 
----
+Installs and updates itself automatically — this is the preferred way to get Code2Git.
 
-## 🛠️ Tech Stack
+### 2. Manual Installation
 
-| Technology | Purpose |
-|------------|---------|
-| **JavaScript (ES6+)** | Core extension logic |
-| **Webpack** | Module bundling & build pipeline |
-| **Chrome Extensions API (Manifest V3)** | Browser integration |
-| **GitHub REST API** | Repository management & code pushing |
-| **OAuth 2.0** | Secure authentication |
-| **Custom CSS** | Premium dark UI with glassmorphism effects |
+1. Create your own OAuth app in GitHub → [github.com/settings/applications/new](https://github.com/settings/applications/new), and keep `CLIENT_ID` / `CLIENT_SECRET` confidential.
+   - **Application name:** _(your choice)_
+   - **Homepage URL:** `https://github.com/im-anishraj/code-to-git`
+   - **Authorization callback URL:** `https://github.com/`
+2. Download the project as a [release ZIP](https://github.com/im-anishraj/code-to-git/releases) or clone this repo.
+3. Run `npm run setup` to install the developer dependencies.
+4. Add your `CLIENT_ID` and `CLIENT_SECRET` to `src/js/authorize.js` and `src/js/oauth2.js`.
+5. Go to [chrome://extensions](chrome://extensions) and enable [Developer mode](https://www.mstoic.com/enable-developer-mode-in-chrome/) (top right).
+6. Click **Load unpacked** and select the Code2Git folder.
 
----
+## Setup
 
-## 💻 Local Development
+1. Launch the extension after installing.
+2. Click **Authorize with GitHub** to connect your account.
+3. Click **Get Started** to set up an existing or new repo (private by default).
+4. Start solving on LeetCode or GFG — click the extension icon any time to view your progress.
 
-Want to contribute or tinker? Here's how to get set up:
+## Roadmap
 
-```bash
-# 1. Fork & clone
-git clone https://github.com/<your-username>/code-to-git.git
-cd code-to-git
+- [x] LeetCode.com
+- [x] LeetCode.cn
+- [x] GeeksforGeeks
+- [ ] HackerRank _(in progress)_
+- [ ] More platforms — [request one](https://github.com/im-anishraj/code-to-git/labels/feature)
 
-# 2. Install dependencies
-npm install
+## Troubleshooting
 
-# 3. Build the extension
-npm run build
+<details>
+<summary>My submission didn't get pushed</summary>
+<br>
+Make sure you waited ~4 seconds after submitting before touching the editor again — see <a href="#how-it-works">How It Works</a>. If it still didn't sync, select the submission and use the manual sync button next to the notes icon.
+</details>
 
-# 4. Load in Chrome
-#    → Navigate to chrome://extensions
-#    → Enable "Developer mode" (top right toggle)
-#    → Click "Load unpacked"
-#    → Select the ./dist/chrome folder
-```
+<details>
+<summary>The extension behaves oddly on LeetCode</summary>
+<br>
+Switch to the old layout or the new dynamic layout. The non-dynamic new layout has known compatibility issues.
+</details>
 
-### Available Scripts
+## Contributing
 
-| Command | Description |
-|---------|-------------|
-| `npm run build` | Build production extension to `./dist/` |
-| `npm run dev` | Build & watch for changes |
-| `npm run format` | Auto-format JS, HTML, CSS with Prettier |
-| `npm run lint` | Lint JavaScript with ESLint |
-| `npm run test` | Run test suite with Jasmine |
+Contributions, issues, and feature requests are welcome — this project grows with its community.
 
----
+| Command               | Description                        |
+| --------------------- | ---------------------------------- |
+| `npm run`             | Show available commands            |
+| `npm run setup`       | Install dependencies               |
+| `npm run format`      | Auto-format JavaScript, HTML/CSS   |
+| `npm run format-test` | Test if code is formatted properly |
+| `npm run lint`        | Lint JavaScript                    |
+| `npm run lint-test`   | Test if code is linted properly    |
 
-## 🤝 Contributing
+1. Fork the repo and create your branch from `main`.
+2. Make your changes and run `npm run format` and `npm run lint`.
+3. Open a pull request describing what you changed and why.
 
-Contributions are what make open source amazing! Any contributions you make are **greatly appreciated**.
+## License
 
-1. **Fork** the repository
-2. **Create** your feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
+Code2Git is [MIT licensed](https://github.com/im-anishraj/code-to-git/blob/main/LICENSE).
 
-Check out [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+## Support
 
-> ⭐ **If you find this useful, please consider giving it a star!** It helps others discover the project.
+If Code2Git saves you time, consider starring the repo — it helps others find it and keeps development going.
 
----
-
-## 📋 Roadmap
-
-- [x] Auto-sync accepted coding solutions
-- [x] Premium dark theme dashboard
-- [x] Stats tracking (Easy / Medium / Hard)
-- [x] GeeksforGeeks integration
-- [ ] Support for other universal coding platforms (HackerRank, etc.)
-- [ ] Support for multiple languages per problem
-- [ ] Streak tracking & badges
-- [ ] Firefox Add-on store listing
-
-Have an idea? [Request a feature →](https://github.com/im-anishraj/code-to-git/issues/new?labels=enhancement)
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
-
----
-
-## 🔒 Privacy
-
-Your privacy matters. Code to Git does **not** collect, store, or transmit any personal data to external servers. All data stays in your browser. Read the full [Privacy Policy](PRIVACY.md).
-
----
-
-<div align="center">
-
-**Made with ❤️ by [Anish Raj](https://github.com/im-anishraj)**
-
-<br />
-
-[![GitHub](https://img.shields.io/badge/Follow-%40im--anishraj-181717?style=for-the-badge&logo=github)](https://github.com/im-anishraj)
-
-</div>
+<a href="https://github.com/im-anishraj/code-to-git/stargazers">
+  <img src="https://api.star-history.com/svg?repos=im-anishraj/code-to-git&type=Date" alt="Star History Chart" width="600">
+</a>

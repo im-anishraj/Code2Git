@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "Code2Git",
+  "description": "Automatically integrate your Leetcode & GFG submissions to GitHub",
+  "homepage_url": "https://github.com/im-anishraj/code-to-git",
+  "version": "0.1.1",
+  "author": "Anish Raj",
+  "action": {
+    "default_icon": "assets/logo.png",
+    "default_popup": "src/html/popup.html"
+  },
+  "icons": {
+    "16": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  },
+  "background": {
+    "service_worker": "src/js/background.js"
+  },
+  "permissions": [
+    "unlimitedStorage",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/*",
+        "https://leetcode.cn/*",
+        "https://github.com/*",
+        "https://practice.geeksforgeeks.org/*",
+        "https://www.geeksforgeeks.org/*"
+      ],
+      "js": [
+        "src/js/interceptor.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://leetcode.com/*",
+        "https://leetcode.cn/*",
+        "https://github.com/*",
+        "https://practice.geeksforgeeks.org/*",
+        "https://www.geeksforgeeks.org/*"
+      ],
+      "js": [
+        "src/js/leetcode.js",
+        "src/js/authorize.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["src/js/interceptor.js"],
+      "matches": [
+        "https://leetcode.com/*",
+        "https://leetcode.cn/*",
+        "https://practice.geeksforgeeks.org/*",
+        "https://www.geeksforgeeks.org/*"
+      ]
+    }
+  ]
+}
