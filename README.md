@@ -5,7 +5,7 @@
   <p>Solve on LeetCode, LeetCode CN &amp; GeeksforGeeks — Code2Git turns every accepted solution into a GitHub commit, organized, labeled, and ready to show recruiters.</p>
 
   <p>
-    <a href="https://github.com/im-anishraj/Code2Git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+    <a href="https://github.com/im-anishraj/Code2Git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg" alt="license"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/v/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-version"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/d/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-users"></a>
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd"><img src="https://img.shields.io/chrome-web-store/rating/geodebjjkeochpcpjdkclmjbpkjbihnd.svg" alt="chrome-webstore-rating"></a>
@@ -230,7 +230,7 @@ Contributions, issues, and feature requests are welcome — this project grows w
 
 ## 📄 License
 
-Code2Git is [MIT licensed](https://github.com/im-anishraj/Code2Git/blob/main/LICENSE).
+Code2Git is [Apache 2.0 licensed](https://github.com/im-anishraj/Code2Git/blob/main/LICENSE).
 
 ## ⭐ Support
 
