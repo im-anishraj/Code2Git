@@ -13,6 +13,9 @@
     <a href="https://github.com/im-anishraj/Code2Git/commits/main"><img src="https://img.shields.io/github/last-commit/im-anishraj/Code2Git" alt="last-commit"></a>
     <a href="https://github.com/im-anishraj/Code2Git/stargazers"><img src="https://img.shields.io/github/stars/im-anishraj/Code2Git?style=social" alt="stars"></a>
   </p>
+  <p>
+    <a href="https://trendshift.io/repositories/253425" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/253425" alt="im-anishraj%2FCode2Git | Trendshift" width="250" height="55"/></a>
+  </p>
 
   <p>
     <a href="#-installation"><b>Install</b></a> •
