@@ -101,7 +101,7 @@ In the meantime, use the **manual sync** button next to the notes icon:
 
 <div align="center">
     <a href="https://chromewebstore.google.com/u/1/detail/code2git/geodebjjkeochpcpjdkclmjbpkjbihnd" rel="Download Code2Git">
-        <img src="https://embedsignage.com/wp-content/uploads/2016/04/embed-signage-chromeos-web-store-button.png" alt="Download Code2Git" width="300" />
+        <img src="assets/chrome-readme.png" alt="Download Code2Git" width="300" />
     </a>
 </div>
 
