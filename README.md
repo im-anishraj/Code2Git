@@ -157,7 +157,7 @@ Missed one, or want to push an older submission? Select it and hit the **manual 
 
 Installs and updates itself automatically — this is the preferred way to get Code2Git.
 
-### Manual Installation
+### Manual Installation - For Developers
 
 1. Create your own OAuth app in GitHub → [github.com/settings/applications/new](https://github.com/settings/applications/new), and keep `CLIENT_ID` / `CLIENT_SECRET` confidential.
    - **Application name:** _(your choice)_
